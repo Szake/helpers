@@ -1,0 +1,114 @@
+body {
+    all: unset;
+    background: #f0f0f0;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 20px 120px;
+}
+
+.b-tabs {
+    margin: 30px 0;
+}
+.b-tabsHeading {
+    height: 40px;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+.b-tabsHeading__list {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    transition: height 0.2s ease-in-out 0s;
+}
+.b-tabsHeading__item {
+    flex: 1 1 auto;
+    margin: 0 10px 0 0;
+}
+.b-tabsHeading__item:last-child {
+    margin-right: 0;
+}
+.b-tabsHeading__item.-state_active {}
+.b-tabsHeading__link {
+    display: block;
+    height: 40px;
+    padding: 0 20px;
+    background: #fff;
+    line-height: 40px;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.b-tabsHeading__link:hover {
+    background: #f9f9f9;
+}
+.b-tabsHeading__item.-state_active .b-tabsHeading__link {
+    background: #ff4040;
+    color: #fff;
+}
+
+.b-tabsContent {
+    font-size: 16px;
+}
+.b-tabsContent__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.b-tabsContent__item {
+    display: none;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background: #fff;
+}
+.b-tabsContent__item.-state_active {
+    display: block;
+    border-color: #ff4040;
+}
+
+
+@media all and (max-width: 640px) {
+    .b-tabsHeading {
+        overflow: hidden;
+    }
+    .b-tabs.-state_expanded .b-tabsHeading {
+        overflow: visible;
+    }
+    .b-tabsHeading__list {
+        position: relative;
+        display: block;
+        height: 40px;
+        padding: 40px 0 0;
+        overflow: hidden;
+    }
+    .b-tabs.-state_expanded .b-tabsHeading__list {
+        height: 160px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .b-tabsHeading__item {
+        margin: 0;
+    }
+    .b-tabsHeading__item.-state_active {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .b-tabsHeading__item.-state_active .b-tabsHeading__link:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        display: block;
+        margin: -4px 0 0;
+        border-top: 8px solid #fff;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+    }
+}
