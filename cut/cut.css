@@ -1,0 +1,29 @@
+:root {
+    font: 400 16px/1.5 sans-serif;
+    color: #222;
+}
+
+body {
+    all: unset;
+    background: #f0f0f0;
+}
+
+.wrapper {
+    max-width: 960px;
+    box-sizing: border-box;
+    padding: 60px 20px 120px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+a {
+    font-weight: 700;
+    color: #ff4040;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

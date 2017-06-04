@@ -5,7 +5,7 @@
 //              -> a[href="#tab_No"]
 //    -> .js-tabs__body
 //        -> ul
-//           -> li
+//           -> li[id="tab_No"]
 
 let customTabs = () => {
     let class_active = '-state_active',
@@ -67,9 +67,9 @@ let customTabs = () => {
     };
 
     // Loop:
-    let tabs = document.querySelectorAll('.js-tabs');
-    Array.prototype.forEach.call(tabs, (block) => {
-        init(block);
+    let collection = document.querySelectorAll('.js-tabs');
+    Array.prototype.forEach.call(collection, (item) => {
+        init(item);
     });
 };
 
