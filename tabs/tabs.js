@@ -7,6 +7,8 @@
 //        -> ul
 //           -> li[id="tab_No"]
 
+
+// Main:
 let customTabs = () => {
     let class_active = '-state_active',
         class_expand = '-state_expanded';
@@ -73,4 +75,5 @@ let customTabs = () => {
     });
 };
 
+// Call:
 customTabs();

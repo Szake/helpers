@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #fff;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 60px 20px 120px;
+}
+
+.colors {
+  display: flex;
+  align-items: stretch;
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.color {
+  flex: 0 0 50%;
+}
+.color.start {
+  background: #f0f0f0;
+}
+.color.end {
+  background: #333;
+}

@@ -1,8 +1,11 @@
+// div.js-cut, p.js-cut
+
+// Main:
 let customCut = () => {
     let init = (block) => {
 
         let text = block.textContent,
-            size = block.dataset && block.dataset.size || 20,
+            size = block.dataset && Math.abs(block.dataset.size) || 20,
             link = block.dataset && block.dataset.link || 'Read more';
 
         let index = text.indexOf('.', size - 1);
@@ -43,4 +46,5 @@ let customCut = () => {
     });
 };
 
+// Call:
 customCut();
