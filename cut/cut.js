@@ -1,4 +1,6 @@
 // div.js-cut, p.js-cut
+// [data-size] ~ number of letters to show (till the .dot)
+// [data-link] -> text of the trigger
 
 // Main:
 let customCut = () => {
