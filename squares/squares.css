@@ -1,0 +1,32 @@
+body {
+	all: unset;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 40px 20px 120px;
+}
+
+.square {
+	width: 400px;
+	height: 400px;
+	background: #000;
+}
+.square-cell {
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.square-cell:hover {
+	position: relative;
+	z-index: 10;
+	outline: 2px solid #000;
+	outline-offset: 2px;
+}
+.square-cell.state-1 { background: coral; }
+.square-cell.state-2 { background: gold; }
+.square-cell.state-3 { background: aqua; }
+.square-cell.state-4 { background: purple; }
