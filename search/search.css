@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #f0f0f0;
+  font: 400 14px/1.5 sans-serif;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 60px 20px 120px;
+  background: #fff;
+}
+
+.selected {
+  background: #ff8080;
+  color: #fff;
+}
