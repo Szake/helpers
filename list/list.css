@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #f0f0f0;
+  font: 400 14px/1.5 sans-serif;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 60px 20px 120px;
+  background: #fff;
+}
+
+.animals {}
+.animals-title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #202020;
+}
+.animals-title:after {
+  content: ':';
+}
+.animals-list {
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.animals-list-item {}
+.animals-list-item-mark {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  border: 3px solid #ff4040;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.animals-list-item-name {
+  margin: 0 5px 0 0;
+}
+.animals-list-item-value {
+  position: relative;
+  top: -6px;
+  font-style: italic;
+  font-size: 8px;
+  color: #888;
+}
+.animals-list-item-value:before {
+  content: '('
+}
+.animals-list-item-value:after {
+  content: ')'
+}
