@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #f0f0f0;
+  font: 400 14px/1.5 sans-serif;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 60px 20px 120px;
+  background: #fff;
+}
+
+ul {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  padding: 2px 10px;
+  background: #f5f5f5;
+  transition: all 0.2s ease 0s;
+}
+li:not(:last-child) {
+  margin: 0 0 4px;
+}
+
+.found {
+  outline: 1px solid #ff8080;
+  outline-offset: 2px;
+}
+.not-found {
+  outline: 1px solid #000;
+  outline-offset: 2px;
+}
+.selected {
+  background: #ff8080;
+  font-style: italic;
+  color: #fff;
+}
+
+/* Exception: */
+.found li:not(.selected) {
+  display: none;
+}
